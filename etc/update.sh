@@ -41,7 +41,7 @@ rm /bin/thoron
 rm /usr/local/bin/thoron
 rm /data/data/com.termux/files/usr/bin/thoron
 cd ~
-git clone https://github.com/entynetproject/thoron.git
+git clone https://github.com/EntySec/thoron.git
 if [[ "$UPD" != "true" ]]
 then
 sleep 0

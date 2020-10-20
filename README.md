@@ -3,23 +3,23 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619953-3d89dc80-e997-11ea-95c0-b8232f0f0217.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://entynetproject.simplesite.com/">
-    <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
+  <a href="http://EntySec.simplesite.com/">
+    <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
   </a> 
-  <a href="https://github.com/entynetproject/thoron/releases">
-    <img src="https://img.shields.io/github/release/entynetproject/thoron.svg">
+  <a href="https://github.com/EntySec/thoron/releases">
+    <img src="https://img.shields.io/github/release/EntySec/thoron.svg">
   </a>
   <a href="https://wikipedia.org/wiki/Ruby_(programming_language)">
     <img src="https://img.shields.io/badge/language-ruby-red.svg">
  </a>
-  <a href="https://github.com/entynetproject/thoron/issues?q=is%3Aissue+is%3Aclosed">
-      <img src="https://img.shields.io/github/issues/entynetproject/thoron.svg">
+  <a href="https://github.com/EntySec/thoron/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/EntySec/thoron.svg">
   </a>
-  <a href="https://github.com/entynetproject/thoron/wiki">
+  <a href="https://github.com/EntySec/thoron/wiki">
       <img src="https://img.shields.io/badge/wiki%20-thoron-lightgrey.svg">
  </a>
-  <a href="https://twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
+  <a href="https://twitter.com/EntySec">
+    <img src="https://img.shields.io/badge/twitter-EntySec-blue.svg">
  </a>
 </p>
 

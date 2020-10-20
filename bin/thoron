@@ -144,7 +144,7 @@ if [[ "$ASESR" = 0 ]]
 then 
 cd ~
 {
-git clone https://github.com/entynetproject/thoron.git
+git clone https://github.com/EntySec/thoron.git
 cd $OLDPWD
 cd ~/thoron
 mkdir etc/.disabled

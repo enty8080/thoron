@@ -65,7 +65,7 @@ sleep 0
 else
 cd ~
 {
-git clone https://github.com/entynetproject/thoron.git
+git clone https://github.com/EntySec/thoron.git
 } &> /dev/null
 fi
 
