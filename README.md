@@ -29,9 +29,7 @@
 
 # About Thoron Framework
 
-    Thoron Framework is a Linux post-exploitation framework that exploits
-    Linux TCP vulnerability to provide a shell-like connection. Thoron Framework 
-    has the ability to create simple payloads to provide Linux TCP attack. 
+Thoron Framework is a Linux post-exploitation framework that exploits Linux TCP vulnerability to provide a shell-like connection. Thoron Framework has the ability to create simple payloads to provide Linux TCP attack. 
 
 ***
 
@@ -57,10 +55,7 @@
 
 # Thoron Framework execution
 
-```
-To run Thoron Framework you should 
-execute the following command.
-```
+To run Thoron Framework you should execute the following command.
 
 > thoron
       
@@ -70,26 +65,15 @@ execute the following command.
 
 * Simple and clear UX/UI.
 
-```
-Thoron Framework has a simple and clear UX/UI. 
-It is easy to understand and it will be easier 
-for you to master the Thoron Framework.
-```
+Thoron Framework has a simple and clear UX/UI. It is easy to understand and it will be easier for you to master the Thoron Framework.
 
 * A lot of different payloads.
 
-```
-There are a lot of different Linux payloads in 
-Thoron Framework such as Shell and Python payloads.
-```
+There are a lot of different Linux payloads in Thoron Framework such as Shell and Python payloads.
 
 * Powerful ThorCat listener.
 
-```
-There is a powerful ThorCat listener in Thoron 
-Framework that supports secure SSL connection 
-and other useful functions.
-```
+There is a powerful ThorCat listener in Thoron Framework that supports secure SSL connection and other useful functions.
 
 ![thorcat](https://user-images.githubusercontent.com/54115104/86508324-e11b9e00-bde7-11ea-84c2-426512f070ba.png)
 
@@ -97,8 +81,4 @@ and other useful functions.
     
 # Thoron Framework disclaimer
 
-```
-Usage of the Thoron Framework for attacking targets without prior mutual consent is illegal.
-It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
-Developers assume no liability and are not responsible for any misuse or damage caused by this program.
-```
+Usage of the Thoron Framework for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
