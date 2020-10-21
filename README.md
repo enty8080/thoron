@@ -3,7 +3,7 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619953-3d89dc80-e997-11ea-95c0-b8232f0f0217.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://entysec.netlify.app/">
+  <a href="http://EntySec.simplesite.com/">
     <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
   </a> 
   <a href="https://github.com/EntySec/thoron/releases">
@@ -29,7 +29,9 @@
 
 # About Thoron Framework
 
-Thoron Framework is a Linux post-exploitation framework that exploits Linux TCP vulnerability to provide a shell-like connection. Thoron Framework has the ability to create simple payloads to provide Linux TCP attack. 
+    Thoron Framework is a Linux post-exploitation framework that exploits
+    Linux TCP vulnerability to provide a shell-like connection. Thoron Framework 
+    has the ability to create simple payloads to provide Linux TCP attack. 
 
 ***
 
@@ -55,7 +57,10 @@ Thoron Framework is a Linux post-exploitation framework that exploits Linux TCP 
 
 # Thoron Framework execution
 
-To run Thoron Framework you should execute the following command.
+```
+To run Thoron Framework you should 
+execute the following command.
+```
 
 > thoron
       
@@ -65,15 +70,26 @@ To run Thoron Framework you should execute the following command.
 
 * Simple and clear UX/UI.
 
-Thoron Framework has a simple and clear UX/UI. It is easy to understand and it will be easier for you to master the Thoron Framework.
+```
+Thoron Framework has a simple and clear UX/UI. 
+It is easy to understand and it will be easier 
+for you to master the Thoron Framework.
+```
 
 * A lot of different payloads.
 
-There are a lot of different Linux payloads in Thoron Framework such as Shell and Python payloads.
+```
+There are a lot of different Linux payloads in 
+Thoron Framework such as Shell and Python payloads.
+```
 
 * Powerful ThorCat listener.
 
-There is a powerful ThorCat listener in Thoron Framework that supports secure SSL connection and other useful functions.
+```
+There is a powerful ThorCat listener in Thoron 
+Framework that supports secure SSL connection 
+and other useful functions.
+```
 
 ![thorcat](https://user-images.githubusercontent.com/54115104/86508324-e11b9e00-bde7-11ea-84c2-426512f070ba.png)
 
@@ -81,4 +97,8 @@ There is a powerful ThorCat listener in Thoron Framework that supports secure SS
     
 # Thoron Framework disclaimer
 
-Usage of the Thoron Framework for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
+Usage of the Thoron Framework for attacking targets without prior mutual consent is illegal.
+It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
+Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
