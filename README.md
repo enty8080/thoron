@@ -37,7 +37,7 @@
 
 # Getting started
 
-# Thoron installation
+## Thoron installation
 
 > cd thoron
 
@@ -45,7 +45,7 @@
 
 > ./install.sh
 
-# Thoron uninstallation
+## Thoron uninstallation
 
 > cd thoron
 
