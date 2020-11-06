@@ -91,7 +91,7 @@ Framework that supports secure SSL connection
 and other useful functions.
 ```
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/98335154-80120a00-2015-11eb-8a59-ccd5ed5d6c33.png" alt="thoron_2" height="550px"></h3>
+<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/98335154-80120a00-2015-11eb-8a59-ccd5ed5d6c33.png" alt="thoron_2" height="650px"></h3>
 
 ***
     
