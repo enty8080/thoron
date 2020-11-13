@@ -6,285 +6,281 @@ G="\033[1;34m[*] \033[0m"
 S="\033[1;32m[+] \033[0m"
 E="\033[1;31m[-] \033[0m"
 
-if [[ -d ~/thoron ]]
-then
-{
-cd ~/thoron
-mkdir etc/.disabled
-mv modules/payload/clang.rb etc/.disabled
-mv etc/modules/payload/clang.rb ~/thoron/modules/payload
-cp etc/.disabled/clang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/shell.rb etc/.disabled
-mv etc/modules/payload/shell.rb ~/thoron/modules/payload
-cp etc/.disabled/shell.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/python.rb etc/.disabled
-mv etc/modules/payload/python.rb ~/thoron/modules/payload
-cp etc/.disabled/python.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/ruby.rb etc/.disabled
-mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
-cp etc/.disabled/ruby.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/cpp.rb etc/.disabled
-mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
-cp etc/.disabled/cpp.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/golang.rb etc/.disabled
-mv etc/modules/payload/golang.rb ~/thoron/modules/payload
-cp etc/.disabled/golang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/java.rb etc/.disabled
-mv etc/modules/payload/java.rb ~/thoron/modules/payload
-cp etc/.disabled/java.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/lua.rb etc/.disabled
-mv etc/modules/payload/lua.rb ~/thoron/modules/payload
-cp etc/.disabled/lua.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/nodejs.rb etc/.disabled
-mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
-cp etc/.disabled/nodejs.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/pascal.rb etc/.disabled
-mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
-cp etc/.disabled/pascal.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/perl.rb etc/.disabled
-mv etc/modules/payload/perl.rb ~/thoron/modules/payload
-cp etc/.disabled/perl.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/php.rb etc/.disabled
-mv etc/modules/payload/php.rb ~/thoron/modules/payload
-cp etc/.disabled/php.rb etc
-rm -rf etc/.disabled
-} &> /dev/null
-chmod +x thoron
-./thoron
-{
-cd ~/thoron
-mkdir etc/.disabled
-mv modules/payload/clang.rb etc/.disabled
-mv etc/modules/payload/clang.rb ~/thoron/modules/payload
-cp etc/.disabled/clang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/shell.rb etc/.disabled
-mv etc/modules/payload/shell.rb ~/thoron/modules/payload
-cp etc/.disabled/shell.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/python.rb etc/.disabled
-mv etc/modules/payload/python.rb ~/thoron/modules/payload
-cp etc/.disabled/python.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/ruby.rb etc/.disabled
-mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
-cp etc/.disabled/ruby.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/cpp.rb etc/.disabled
-mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
-cp etc/.disabled/cpp.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/golang.rb etc/.disabled
-mv etc/modules/payload/golang.rb ~/thoron/modules/payload
-cp etc/.disabled/golang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/java.rb etc/.disabled
-mv etc/modules/payload/java.rb ~/thoron/modules/payload
-cp etc/.disabled/java.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/lua.rb etc/.disabled
-mv etc/modules/payload/lua.rb ~/thoron/modules/payload
-cp etc/.disabled/lua.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/nodejs.rb etc/.disabled
-mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
-cp etc/.disabled/nodejs.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/pascal.rb etc/.disabled
-mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
-cp etc/.disabled/pascal.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/perl.rb etc/.disabled
-mv etc/modules/payload/perl.rb ~/thoron/modules/payload
-cp etc/.disabled/perl.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/php.rb etc/.disabled
-mv etc/modules/payload/php.rb ~/thoron/modules/payload
-cp etc/.disabled/php.rb etc
-rm -rf etc/.disabled
-} &> /dev/null
+if [[ -d ~/thoron ]]; then
+    {
+        cd ~/thoron
+        mkdir etc/.disabled
+        mv modules/payload/clang.rb etc/.disabled
+        mv etc/modules/payload/clang.rb ~/thoron/modules/payload
+        cp etc/.disabled/clang.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/shell.rb etc/.disabled
+        mv etc/modules/payload/shell.rb ~/thoron/modules/payload
+        cp etc/.disabled/shell.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/python.rb etc/.disabled
+        mv etc/modules/payload/python.rb ~/thoron/modules/payload
+        cp etc/.disabled/python.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/ruby.rb etc/.disabled
+        mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
+        cp etc/.disabled/ruby.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/cpp.rb etc/.disabled
+        mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
+        cp etc/.disabled/cpp.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/golang.rb etc/.disabled
+        mv etc/modules/payload/golang.rb ~/thoron/modules/payload
+        cp etc/.disabled/golang.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/java.rb etc/.disabled
+        mv etc/modules/payload/java.rb ~/thoron/modules/payload
+        cp etc/.disabled/java.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/lua.rb etc/.disabled
+        mv etc/modules/payload/lua.rb ~/thoron/modules/payload
+        cp etc/.disabled/lua.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/nodejs.rb etc/.disabled
+        mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
+        cp etc/.disabled/nodejs.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/pascal.rb etc/.disabled
+        mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
+        cp etc/.disabled/pascal.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/perl.rb etc/.disabled
+        mv etc/modules/payload/perl.rb ~/thoron/modules/payload
+        cp etc/.disabled/perl.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/php.rb etc/.disabled
+        mv etc/modules/payload/php.rb ~/thoron/modules/payload
+        cp etc/.disabled/php.rb etc
+        rm -rf etc/.disabled
+    } &> /dev/null
+    chmod +x thoron
+    ./thoron
+    {
+        cd ~/thoron
+        mkdir etc/.disabled
+        mv modules/payload/clang.rb etc/.disabled
+        mv etc/modules/payload/clang.rb ~/thoron/modules/payload
+        cp etc/.disabled/clang.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/shell.rb etc/.disabled
+        mv etc/modules/payload/shell.rb ~/thoron/modules/payload
+        cp etc/.disabled/shell.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/python.rb etc/.disabled
+        mv etc/modules/payload/python.rb ~/thoron/modules/payload
+        cp etc/.disabled/python.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/ruby.rb etc/.disabled
+        mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
+        cp etc/.disabled/ruby.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/cpp.rb etc/.disabled
+        mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
+        cp etc/.disabled/cpp.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/golang.rb etc/.disabled
+        mv etc/modules/payload/golang.rb ~/thoron/modules/payload
+        cp etc/.disabled/golang.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/java.rb etc/.disabled
+        mv etc/modules/payload/java.rb ~/thoron/modules/payload
+        cp etc/.disabled/java.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/lua.rb etc/.disabled
+        mv etc/modules/payload/lua.rb ~/thoron/modules/payload
+        cp etc/.disabled/lua.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/nodejs.rb etc/.disabled
+        mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
+        cp etc/.disabled/nodejs.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/pascal.rb etc/.disabled
+        mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
+        cp etc/.disabled/pascal.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/perl.rb etc/.disabled
+        mv etc/modules/payload/perl.rb ~/thoron/modules/payload
+        cp etc/.disabled/perl.rb etc
+        rm -rf etc/.disabled
+        mkdir etc/.disabled
+        mv modules/payload/php.rb etc/.disabled
+        mv etc/modules/payload/php.rb ~/thoron/modules/payload
+        cp etc/.disabled/php.rb etc
+        rm -rf etc/.disabled
+    } &> /dev/null
 else
-{
-ASESR="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)"
-} &> /dev/null
-if [[ "$ASESR" = 0 ]]
-then 
-cd ~
-{
-git clone https://github.com/EntySec/thoron.git
-cd $OLDPWD
-cd ~/thoron
-mkdir etc/.disabled
-mv modules/payload/clang.rb etc/.disabled
-mv etc/modules/payload/clang.rb ~/thoron/modules/payload
-cp etc/.disabled/clang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/shell.rb etc/.disabled
-mv etc/modules/payload/shell.rb ~/thoron/modules/payload
-cp etc/.disabled/shell.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/python.rb etc/.disabled
-mv etc/modules/payload/python.rb ~/thoron/modules/payload
-cp etc/.disabled/python.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/ruby.rb etc/.disabled
-mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
-cp etc/.disabled/ruby.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/cpp.rb etc/.disabled
-mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
-cp etc/.disabled/cpp.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/golang.rb etc/.disabled
-mv etc/modules/payload/golang.rb ~/thoron/modules/payload
-cp etc/.disabled/golang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/java.rb etc/.disabled
-mv etc/modules/payload/java.rb ~/thoron/modules/payload
-cp etc/.disabled/java.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/lua.rb etc/.disabled
-mv etc/modules/payload/lua.rb ~/thoron/modules/payload
-cp etc/.disabled/lua.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/nodejs.rb etc/.disabled
-mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
-cp etc/.disabled/nodejs.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/pascal.rb etc/.disabled
-mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
-cp etc/.disabled/pascal.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/perl.rb etc/.disabled
-mv etc/modules/payload/perl.rb ~/thoron/modules/payload
-cp etc/.disabled/perl.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/php.rb etc/.disabled
-mv etc/modules/payload/php.rb ~/thoron/modules/payload
-cp etc/.disabled/php.rb etc
-rm -rf etc/.disabled
-} &> /dev/null
-if [[ ! -d ~/thoron ]]
-then
-   echo -e ""$E"Execution failed!"
-   exit
-fi
-chmod +x thoron
-./thoron
-{
-if [[ -f ~/thoron/.updated ]]
-then
-rm ~/thoron/.updated
-else
-cd ~/thoron
-mkdir etc/.disabled
-mv modules/payload/clang.rb etc/.disabled
-mv etc/modules/payload/clang.rb ~/thoron/modules/payload
-cp etc/.disabled/clang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/shell.rb etc/.disabled
-mv etc/modules/payload/shell.rb ~/thoron/modules/payload
-cp etc/.disabled/shell.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/python.rb etc/.disabled
-mv etc/modules/payload/python.rb ~/thoron/modules/payload
-cp etc/.disabled/python.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/ruby.rb etc/.disabled
-mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
-cp etc/.disabled/ruby.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/cpp.rb etc/.disabled
-mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
-cp etc/.disabled/cpp.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/golang.rb etc/.disabled
-mv etc/modules/payload/golang.rb ~/thoron/modules/payload
-cp etc/.disabled/golang.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/java.rb etc/.disabled
-mv etc/modules/payload/java.rb ~/thoron/modules/payload
-cp etc/.disabled/java.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/lua.rb etc/.disabled
-mv etc/modules/payload/lua.rb ~/thoron/modules/payload
-cp etc/.disabled/lua.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/nodejs.rb etc/.disabled
-mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
-cp etc/.disabled/nodejs.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/pascal.rb etc/.disabled
-mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
-cp etc/.disabled/pascal.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/perl.rb etc/.disabled
-mv etc/modules/payload/perl.rb ~/thoron/modules/payload
-cp etc/.disabled/perl.rb etc
-rm -rf etc/.disabled
-mkdir etc/.disabled
-mv modules/payload/php.rb etc/.disabled
-mv etc/modules/payload/php.rb ~/thoron/modules/payload
-cp etc/.disabled/php.rb etc
-rm -rf etc/.disabled
-fi
-} &> /dev/null
-else
-echo -e ""$E"Execution failed!"
-exit
-fi
+    {
+        CHECK="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)"
+    } &> /dev/null
+    if [[ "$CHECK" = 0 ]]; then 
+        cd ~
+        {
+            git clone https://github.com/EntySec/thoron.git
+            cd $OLDPWD
+            cd ~/thoron
+            mkdir etc/.disabled
+            mv modules/payload/clang.rb etc/.disabled
+            mv etc/modules/payload/clang.rb ~/thoron/modules/payload
+            cp etc/.disabled/clang.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/shell.rb etc/.disabled
+            mv etc/modules/payload/shell.rb ~/thoron/modules/payload
+            cp etc/.disabled/shell.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/python.rb etc/.disabled
+            mv etc/modules/payload/python.rb ~/thoron/modules/payload
+            cp etc/.disabled/python.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/ruby.rb etc/.disabled
+            mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
+            cp etc/.disabled/ruby.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/cpp.rb etc/.disabled
+            mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
+            cp etc/.disabled/cpp.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/golang.rb etc/.disabled
+            mv etc/modules/payload/golang.rb ~/thoron/modules/payload
+            cp etc/.disabled/golang.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/java.rb etc/.disabled
+            mv etc/modules/payload/java.rb ~/thoron/modules/payload
+            cp etc/.disabled/java.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/lua.rb etc/.disabled
+            mv etc/modules/payload/lua.rb ~/thoron/modules/payload
+            cp etc/.disabled/lua.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/nodejs.rb etc/.disabled
+            mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
+            cp etc/.disabled/nodejs.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/pascal.rb etc/.disabled
+            mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
+            cp etc/.disabled/pascal.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/perl.rb etc/.disabled
+            mv etc/modules/payload/perl.rb ~/thoron/modules/payload
+            cp etc/.disabled/perl.rb etc
+            rm -rf etc/.disabled
+            mkdir etc/.disabled
+            mv modules/payload/php.rb etc/.disabled
+            mv etc/modules/payload/php.rb ~/thoron/modules/payload
+            cp etc/.disabled/php.rb etc
+            rm -rf etc/.disabled
+        } &> /dev/null
+        if [[ ! -d ~/thoron ]]; then
+            echo -e ""$E"Execution failed!"
+            exit
+        fi
+        chmod +x thoron
+        ./thoron
+        {
+            if [[ -f ~/thoron/.updated ]]; then
+                rm ~/thoron/.updated
+            else
+                cd ~/thoron
+                mkdir etc/.disabled
+                mv modules/payload/clang.rb etc/.disabled
+                mv etc/modules/payload/clang.rb ~/thoron/modules/payload
+                cp etc/.disabled/clang.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/shell.rb etc/.disabled
+                mv etc/modules/payload/shell.rb ~/thoron/modules/payload
+                cp etc/.disabled/shell.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/python.rb etc/.disabled
+                mv etc/modules/payload/python.rb ~/thoron/modules/payload
+                cp etc/.disabled/python.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/ruby.rb etc/.disabled
+                mv etc/modules/payload/ruby.rb ~/thoron/modules/payload
+                cp etc/.disabled/ruby.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/cpp.rb etc/.disabled
+                mv etc/modules/payload/cpp.rb ~/thoron/modules/payload
+                cp etc/.disabled/cpp.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/golang.rb etc/.disabled
+                mv etc/modules/payload/golang.rb ~/thoron/modules/payload
+                cp etc/.disabled/golang.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/java.rb etc/.disabled
+                mv etc/modules/payload/java.rb ~/thoron/modules/payload
+                cp etc/.disabled/java.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/lua.rb etc/.disabled
+                mv etc/modules/payload/lua.rb ~/thoron/modules/payload
+                cp etc/.disabled/lua.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/nodejs.rb etc/.disabled
+                mv etc/modules/payload/nodejs.rb ~/thoron/modules/payload
+                cp etc/.disabled/nodejs.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/pascal.rb etc/.disabled
+                mv etc/modules/payload/pascal.rb ~/thoron/modules/payload
+                cp etc/.disabled/pascal.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/perl.rb etc/.disabled
+                mv etc/modules/payload/perl.rb ~/thoron/modules/payload
+                cp etc/.disabled/perl.rb etc
+                rm -rf etc/.disabled
+                mkdir etc/.disabled
+                mv modules/payload/php.rb etc/.disabled
+                mv etc/modules/payload/php.rb ~/thoron/modules/payload
+                cp etc/.disabled/php.rb etc
+                rm -rf etc/.disabled
+            fi
+        } &> /dev/null
+    else
+        echo -e ""$E"Execution failed!"
+        exit
+    fi
 fi
