@@ -1,8 +1,8 @@
 # Thoron Framework
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619953-3d89dc80-e997-11ea-95c0-b8232f0f0217.png" alt="logo" height="250px"></h3>
-
 ## `⚠️ Under construction, do not use it now! ⚠️`
+
+<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619953-3d89dc80-e997-11ea-95c0-b8232f0f0217.png" alt="logo" height="250px"></h3>
 
 <p align="center">
   <a href="http://entysec.netlify.app/">
