@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-class Payloads
+class payloads
     def generate_payload(file, data, extension)
         i = "\033[1;77m[i] \033[0m"
         e = "\033[1;31m[-] \033[0m"
