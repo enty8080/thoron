@@ -8,7 +8,7 @@ s = "\033[1;32m[+] \033[0m"
 h = "\033[1;77m[@] \033[0m"
 r = "\033[1;77m[#] \033[0m"
 
-class Payloads:
+class Payloads
     def initialize
         @cust_init = 1
     end
