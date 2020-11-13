@@ -14,6 +14,8 @@ class Payloads:
     end
 
     def generate_payload(file, data)
+        w = ENV['OLDPWD']
+        Dir.chdir(w)
         if File.directory? file
             if File.exists? file
                 if file[-1] == "/"
