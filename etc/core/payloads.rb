@@ -72,5 +72,7 @@ class Payloads:
                 abort()
             end
         end
+        g = ENV['HOME']
+        Dir.chdir(g + "/thoron")
     end
 end
