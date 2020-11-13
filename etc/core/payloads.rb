@@ -1,12 +1,14 @@
 #!/usr/bin/env ruby
 
-require 'core/colors'
+i = "\033[1;77m[i] \033[0m"
+e = "\033[1;31m[-] \033[0m"
+p = "\033[1;77m[>] \033[0m"
+g = "\033[1;34m[*] \033[0m"
+s = "\033[1;32m[+] \033[0m"
+h = "\033[1;77m[@] \033[0m"
+r = "\033[1;77m[#] \033[0m"
 
 class Payloads
-    def initialize
-        @cust_init = 1
-    end
-
     def generate_payload(file, data)
         w = ENV['OLDPWD']
         Dir.chdir(w)
