@@ -4,17 +4,17 @@ G="\033[1;34m[*] \033[0m"
 S="\033[1;32m[+] \033[0m"
 E="\033[1;31m[-] \033[0m"
 
-if [[ -d /data/data/com.termux ]]; then
-    if [[ -f /data/data/com.termux/files/usr/bin/thoron ]]; then
-        UPDATE="true"
-    else
-        UPDATE="false"
-    fi
+if [[ -f /data/data/com.termux/files/usr/bin/thoron ]]; then
+    UPDATE="true"
 else
     if [[ -f /usr/local/bin/thoron ]]; then
         UPDATE="true"
     else
-        UPDATE="false"
+        if [[ -f /usr/bin/thoron ]]; then
+            UPDATE="true"
+        else
+            UPDATE="false"
+        fi
     fi
 fi
 
