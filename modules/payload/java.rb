@@ -55,5 +55,5 @@ payload += "\t\tproc.destroy();\n"
 payload += "\t}\n"
 payload += "}\n"
   
-payload_handler = payloads.new
-payloads.generate_payload(file, payload)
+payload_handler = Payloads.new
+payload_handler.generate_payload(file, payload)
