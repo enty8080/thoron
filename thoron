@@ -141,7 +141,24 @@ elsif c[0] == "use"
                     puts ""
                     puts "Payloads"
                     puts "========"
-                    system("cat data/payloads/payloads.txt")
+                    bigger_name = payload_names[0].length
+                    for  i in payload_names
+                        if i.length > bigger_name
+                            bigger_name = i.length
+                        end
+                    end
+                    if bigger_name >= 5
+                        bigger_name = bigger_name - 2
+                    else
+                        bigger_name = 8
+                    end
+                    delim = " " * bigger_name
+                    puts "    Name#{delim}Description"
+                    puts "    ----#{delim}-----------"
+                    for i in payload_names
+                        delim = " " * (4 - i.length + bigger_name)
+                        puts "    #{i} #{delim}"
+                    end
                     puts ""
                     puts "Listeners"
                     puts "========="
