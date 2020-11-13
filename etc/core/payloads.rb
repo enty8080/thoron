@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'core/colors'
+
 class Payloads
     def initialize
         @cust_init = 1
