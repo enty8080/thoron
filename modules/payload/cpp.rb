@@ -3,7 +3,7 @@
 require 'optparse'
 require 'ostruct'
 
-require 'core/payloads'
+require_relative '../../core/payloads''
 
 Signal.trap("INT") {
     abort()
